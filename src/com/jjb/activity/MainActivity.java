@@ -46,7 +46,7 @@ public class MainActivity extends BaseActivity {
 	private Spinner type;
 	private DatePicker date;
 	private TimePicker time;
-	private Button ok;
+	private Button ok, select;
 	private List<String> spinnerList = new ArrayList<String>();
 	private ArrayAdapter<String> adapter;
 
@@ -74,6 +74,7 @@ public class MainActivity extends BaseActivity {
 		date = (DatePicker) findViewById(R.id.datePicker1);
 		time = (TimePicker) findViewById(R.id.timePicker1);
 		ok = (Button) findViewById(R.id.ok);
+		select = (Button) findViewById(R.id.select);
 
 		time.setIs24HourView(true);
 		resizePikcer(date);// 调整datepicker大小
